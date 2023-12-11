@@ -84,7 +84,7 @@ for(let value of languages){
   
   // if (name === 'java') continue;
   
-  if(name.includes('java') && name.length < 5) break;
+  if(name.includes('Java') && name.length < 5) break;
   
   console.table(value);
 }

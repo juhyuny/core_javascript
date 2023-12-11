@@ -34,7 +34,7 @@ Object.prototype.nickname = 'tiger';
 // 객체 자신의 속성인지 확인하는 방법
 // - "자신(own)의 속성(property)을 가지고(has)있는지 확인 방법"이 덮어쓰여질 수 있는 위험에 대처하는 안전한 방법은?
 
-const key = 'creatAt';
+const key = 'createAt';
 
 // console.log(javaScript.hasOwnProperty(key));
 

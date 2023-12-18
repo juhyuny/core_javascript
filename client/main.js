@@ -14,6 +14,8 @@ export { getNode, clearContents, insertLast } from './lib/index.js';
 const first = getNode('#firstNumber');
 const second = getNode('#secondNumber');
 const result = getNode('.result');
+const clear = getNode('#clear');
+
 
 // 1. input value 값 가져오기
 //     - input에게 input 이벤트를 걸어 준다.
@@ -31,8 +33,21 @@ function handleInput() {
   insertLast(result, total);
 }
 
+
+function handleClear(){
+  clearContents(first)
+  clearContents(second)
+  result.textContent = '-'
+}
+
+clear.addEventListener('click',handleClear)
+
 first.addEventListener('input', handleInput);
 second.addEventListener('input', handleInput);
 
 // 3. 합계 랜더링 하기
 //     - insertLast(), insertAdjacentHTML()
+
+
+
+
